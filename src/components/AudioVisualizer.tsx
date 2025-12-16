@@ -120,7 +120,7 @@ const AudioVisualizer: React.FC<AudioVisualizerProps> = ({ isActive }) => {
 
             // Dynamic coloring
             // Cyan to Purple gradient simulation
-            const hue = (i / barCount) * 360;
+            // const hue = (i / barCount) * 360; // REMOVED: Unused variable causing TS6133
             ctx.strokeStyle = `hsl(${200 + (i / barCount) * 100}, 100%, 50%)`; // Blue to Purple range
             ctx.lineWidth = 2;
             ctx.lineCap = 'round';
